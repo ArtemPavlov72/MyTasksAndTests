@@ -16,6 +16,8 @@
 		ACC57B0F2922BC82008DC8C4 /* MyTasksAndTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC57B0E2922BC82008DC8C4 /* MyTasksAndTestsTests.swift */; };
 		ACC57B192922BC82008DC8C4 /* MyTasksAndTestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC57B182922BC82008DC8C4 /* MyTasksAndTestsUITests.swift */; };
 		ACC57B1B2922BC82008DC8C4 /* MyTasksAndTestsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC57B1A2922BC82008DC8C4 /* MyTasksAndTestsUITestsLaunchTests.swift */; };
+		ACC57B2C2922BED0008DC8C4 /* TasksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC57B2B2922BED0008DC8C4 /* TasksTests.swift */; };
+		ACC57B2E2922C0F6008DC8C4 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC57B2D2922C0F6008DC8C4 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		ACC57B142922BC82008DC8C4 /* MyTasksAndTestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTasksAndTestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC57B182922BC82008DC8C4 /* MyTasksAndTestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTasksAndTestsUITests.swift; sourceTree = "<group>"; };
 		ACC57B1A2922BC82008DC8C4 /* MyTasksAndTestsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTasksAndTestsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACC57B2B2922BED0008DC8C4 /* TasksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTests.swift; sourceTree = "<group>"; };
+		ACC57B2D2922C0F6008DC8C4 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +103,11 @@
 		ACC57AF62922BC80008DC8C4 /* MyTasksAndTests */ = {
 			isa = PBXGroup;
 			children = (
-				ACC57AF72922BC80008DC8C4 /* AppDelegate.swift */,
-				ACC57AF92922BC80008DC8C4 /* SceneDelegate.swift */,
-				ACC57AFB2922BC80008DC8C4 /* ViewController.swift */,
-				ACC57AFD2922BC80008DC8C4 /* Main.storyboard */,
-				ACC57B002922BC82008DC8C4 /* Assets.xcassets */,
-				ACC57B022922BC82008DC8C4 /* LaunchScreen.storyboard */,
-				ACC57B052922BC82008DC8C4 /* Info.plist */,
+				ACC57B2A2922BE52008DC8C4 /* ViewControllers */,
+				ACC57B2F2922C0FB008DC8C4 /* Models */,
+				ACC57B292922BE15008DC8C4 /* Storyboards */,
+				ACC57B272922BD7F008DC8C4 /* App */,
+				ACC57B282922BDF3008DC8C4 /* Resources */,
 			);
 			path = MyTasksAndTests;
 			sourceTree = "<group>";
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				ACC57B0E2922BC82008DC8C4 /* MyTasksAndTestsTests.swift */,
+				ACC57B2B2922BED0008DC8C4 /* TasksTests.swift */,
 			);
 			path = MyTasksAndTestsTests;
 			sourceTree = "<group>";
@@ -125,6 +128,49 @@
 				ACC57B1A2922BC82008DC8C4 /* MyTasksAndTestsUITestsLaunchTests.swift */,
 			);
 			path = MyTasksAndTestsUITests;
+			sourceTree = "<group>";
+		};
+		ACC57B272922BD7F008DC8C4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ACC57AF72922BC80008DC8C4 /* AppDelegate.swift */,
+				ACC57AF92922BC80008DC8C4 /* SceneDelegate.swift */,
+				ACC57B022922BC82008DC8C4 /* LaunchScreen.storyboard */,
+				ACC57B052922BC82008DC8C4 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ACC57B282922BDF3008DC8C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ACC57B002922BC82008DC8C4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ACC57B292922BE15008DC8C4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ACC57AFD2922BC80008DC8C4 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ACC57B2A2922BE52008DC8C4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACC57AFB2922BC80008DC8C4 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ACC57B2F2922C0FB008DC8C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACC57B2D2922C0F6008DC8C4 /* Task.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC57B2E2922C0F6008DC8C4 /* Task.swift in Sources */,
 				ACC57AFC2922BC80008DC8C4 /* ViewController.swift in Sources */,
 				ACC57AF82922BC80008DC8C4 /* AppDelegate.swift in Sources */,
 				ACC57AFA2922BC80008DC8C4 /* SceneDelegate.swift in Sources */,
@@ -268,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC57B2C2922BED0008DC8C4 /* TasksTests.swift in Sources */,
 				ACC57B0F2922BC82008DC8C4 /* MyTasksAndTestsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,7 +487,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QQ7NB58NL6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyTasksAndTests/Info.plist;
+				INFOPLIST_FILE = MyTasksAndTests/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -454,7 +502,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -467,7 +515,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QQ7NB58NL6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyTasksAndTests/Info.plist;
+				INFOPLIST_FILE = MyTasksAndTests/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -482,7 +530,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
