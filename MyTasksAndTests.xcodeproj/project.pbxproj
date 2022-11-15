@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC877F0E2922CA20008A96BE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC877F0D2922CA20008A96BE /* Location.swift */; };
+		AC877F112922CCA6008A96BE /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC877F102922CCA6008A96BE /* LocationTests.swift */; };
 		ACC57AF82922BC80008DC8C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC57AF72922BC80008DC8C4 /* AppDelegate.swift */; };
 		ACC57AFA2922BC80008DC8C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC57AF92922BC80008DC8C4 /* SceneDelegate.swift */; };
 		ACC57AFC2922BC80008DC8C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC57AFB2922BC80008DC8C4 /* ViewController.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC877F0D2922CA20008A96BE /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		AC877F102922CCA6008A96BE /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		ACC57AF42922BC80008DC8C4 /* MyTasksAndTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTasksAndTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC57AF72922BC80008DC8C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACC57AF92922BC80008DC8C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC877F0F2922CC7F008A96BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACC57B2B2922BED0008DC8C4 /* TasksTests.swift */,
+				AC877F102922CCA6008A96BE /* LocationTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		ACC57AEB2922BC80008DC8C4 = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				ACC57B0E2922BC82008DC8C4 /* MyTasksAndTestsTests.swift */,
-				ACC57B2B2922BED0008DC8C4 /* TasksTests.swift */,
+				AC877F0F2922CC7F008A96BE /* Models */,
 			);
 			path = MyTasksAndTestsTests;
 			sourceTree = "<group>";
@@ -169,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				ACC57B2D2922C0F6008DC8C4 /* Task.swift */,
+				AC877F0D2922CA20008A96BE /* Location.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -306,6 +320,7 @@
 			files = (
 				ACC57B2E2922C0F6008DC8C4 /* Task.swift in Sources */,
 				ACC57AFC2922BC80008DC8C4 /* ViewController.swift in Sources */,
+				AC877F0E2922CA20008A96BE /* Location.swift in Sources */,
 				ACC57AF82922BC80008DC8C4 /* AppDelegate.swift in Sources */,
 				ACC57AFA2922BC80008DC8C4 /* SceneDelegate.swift in Sources */,
 			);
@@ -316,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACC57B2C2922BED0008DC8C4 /* TasksTests.swift in Sources */,
+				AC877F112922CCA6008A96BE /* LocationTests.swift in Sources */,
 				ACC57B0F2922BC82008DC8C4 /* MyTasksAndTestsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -43,4 +43,15 @@ class TasksTests: XCTestCase {
         
         XCTAssertNotNil(task.date)
     }
+    
+    func testWhenGivenLocationSetsLocation() {
+        let location = Location(name: "Foo")
+        
+        let task = Task(title: "Foo",
+                        description: "Bar",
+                        location: location)
+        
+        //проверяем, что location, который мы создали - это тот же самый location, который есть в task
+        XCTAssertEqual(location, task.location)
+    }
 }
