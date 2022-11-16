@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC7BEF6129255BE20082076F /* TaskListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7BEF6029255BE20082076F /* TaskListViewControllerTests.swift */; };
 		AC877F0E2922CA20008A96BE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC877F0D2922CA20008A96BE /* Location.swift */; };
 		AC877F112922CCA6008A96BE /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC877F102922CCA6008A96BE /* LocationTests.swift */; };
 		AC877F1329239A5B008A96BE /* TaskManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC877F1229239A5B008A96BE /* TaskManagerTests.swift */; };
 		AC877F1629239B8D008A96BE /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC877F1529239B8D008A96BE /* TaskManager.swift */; };
 		ACC57AF82922BC80008DC8C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC57AF72922BC80008DC8C4 /* AppDelegate.swift */; };
 		ACC57AFA2922BC80008DC8C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC57AF92922BC80008DC8C4 /* SceneDelegate.swift */; };
-		ACC57AFC2922BC80008DC8C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC57AFB2922BC80008DC8C4 /* ViewController.swift */; };
+		ACC57AFC2922BC80008DC8C4 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC57AFB2922BC80008DC8C4 /* TaskListViewController.swift */; };
 		ACC57AFF2922BC80008DC8C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC57AFD2922BC80008DC8C4 /* Main.storyboard */; };
 		ACC57B012922BC82008DC8C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC57B002922BC82008DC8C4 /* Assets.xcassets */; };
 		ACC57B042922BC82008DC8C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC57B022922BC82008DC8C4 /* LaunchScreen.storyboard */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC7BEF6029255BE20082076F /* TaskListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewControllerTests.swift; sourceTree = "<group>"; };
 		AC877F0D2922CA20008A96BE /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		AC877F102922CCA6008A96BE /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		AC877F1229239A5B008A96BE /* TaskManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerTests.swift; sourceTree = "<group>"; };
@@ -49,7 +51,7 @@
 		ACC57AF42922BC80008DC8C4 /* MyTasksAndTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTasksAndTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC57AF72922BC80008DC8C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACC57AF92922BC80008DC8C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ACC57AFB2922BC80008DC8C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACC57AFB2922BC80008DC8C4 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		ACC57AFE2922BC80008DC8C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACC57B002922BC82008DC8C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACC57B032922BC82008DC8C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC7BEF5F29255B970082076F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC7BEF6029255BE20082076F /* TaskListViewControllerTests.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		AC877F0F2922CC7F008A96BE /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,8 +159,9 @@
 		ACC57B0D2922BC82008DC8C4 /* MyTasksAndTestsTests */ = {
 			isa = PBXGroup;
 			children = (
-				ACC57B0E2922BC82008DC8C4 /* MyTasksAndTestsTests.swift */,
 				AC877F0F2922CC7F008A96BE /* Models */,
+				AC7BEF5F29255B970082076F /* Controllers */,
+				ACC57B0E2922BC82008DC8C4 /* MyTasksAndTestsTests.swift */,
 				AC877F1429239A60008A96BE /* Managers */,
 			);
 			path = MyTasksAndTestsTests;
@@ -195,7 +206,7 @@
 		ACC57B2A2922BE52008DC8C4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				ACC57AFB2922BC80008DC8C4 /* ViewController.swift */,
+				ACC57AFB2922BC80008DC8C4 /* TaskListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -342,7 +353,7 @@
 			files = (
 				AC877F1629239B8D008A96BE /* TaskManager.swift in Sources */,
 				ACC57B2E2922C0F6008DC8C4 /* Task.swift in Sources */,
-				ACC57AFC2922BC80008DC8C4 /* ViewController.swift in Sources */,
+				ACC57AFC2922BC80008DC8C4 /* TaskListViewController.swift in Sources */,
 				AC877F0E2922CA20008A96BE /* Location.swift in Sources */,
 				ACC57AF82922BC80008DC8C4 /* AppDelegate.swift in Sources */,
 				ACC57AFA2922BC80008DC8C4 /* SceneDelegate.swift in Sources */,
@@ -356,6 +367,7 @@
 				ACC57B2C2922BED0008DC8C4 /* TasksTests.swift in Sources */,
 				AC877F112922CCA6008A96BE /* LocationTests.swift in Sources */,
 				AC877F1329239A5B008A96BE /* TaskManagerTests.swift in Sources */,
+				AC7BEF6129255BE20082076F /* TaskListViewControllerTests.swift in Sources */,
 				ACC57B0F2922BC82008DC8C4 /* MyTasksAndTestsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
