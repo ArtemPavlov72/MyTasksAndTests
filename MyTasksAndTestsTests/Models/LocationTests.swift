@@ -10,14 +10,6 @@ import CoreLocation
 @testable import MyTasksAndTests
 
 class LocationTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        
-    }
-
-    override func tearDownWithError() throws {
-       
-    }
     
     func testInitSetsName() {
         let location = Location(name: "Foo")
