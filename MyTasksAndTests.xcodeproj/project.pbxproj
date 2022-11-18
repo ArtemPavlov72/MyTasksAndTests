@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC7BEF6129255BE20082076F /* TaskListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7BEF6029255BE20082076F /* TaskListViewControllerTests.swift */; };
+		AC7C03992925643E0074016D /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7C03982925643E0074016D /* DataProvider.swift */; };
 		AC877F0E2922CA20008A96BE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC877F0D2922CA20008A96BE /* Location.swift */; };
 		AC877F112922CCA6008A96BE /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC877F102922CCA6008A96BE /* LocationTests.swift */; };
 		AC877F1329239A5B008A96BE /* TaskManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC877F1229239A5B008A96BE /* TaskManagerTests.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		AC7BEF6029255BE20082076F /* TaskListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewControllerTests.swift; sourceTree = "<group>"; };
+		AC7C03982925643E0074016D /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		AC877F0D2922CA20008A96BE /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		AC877F102922CCA6008A96BE /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		AC877F1229239A5B008A96BE /* TaskManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerTests.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				ACC57AFB2922BC80008DC8C4 /* TaskListViewController.swift */,
+				AC7C03982925643E0074016D /* DataProvider.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				AC877F1629239B8D008A96BE /* TaskManager.swift in Sources */,
 				ACC57B2E2922C0F6008DC8C4 /* Task.swift in Sources */,
 				ACC57AFC2922BC80008DC8C4 /* TaskListViewController.swift in Sources */,
+				AC7C03992925643E0074016D /* DataProvider.swift in Sources */,
 				AC877F0E2922CA20008A96BE /* Location.swift in Sources */,
 				ACC57AF82922BC80008DC8C4 /* AppDelegate.swift in Sources */,
 				ACC57AFA2922BC80008DC8C4 /* SceneDelegate.swift in Sources */,
