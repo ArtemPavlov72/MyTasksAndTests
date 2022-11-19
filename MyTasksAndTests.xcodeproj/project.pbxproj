@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AC7BEF6129255BE20082076F /* TaskListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7BEF6029255BE20082076F /* TaskListViewControllerTests.swift */; };
 		AC7C03992925643E0074016D /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7C03982925643E0074016D /* DataProvider.swift */; };
+		AC7C039B29276F320074016D /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7C039A29276F320074016D /* DataProviderTests.swift */; };
+		AC7C039D2927A16B0074016D /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7C039C2927A16B0074016D /* TaskCell.swift */; };
 		AC877F0E2922CA20008A96BE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC877F0D2922CA20008A96BE /* Location.swift */; };
 		AC877F112922CCA6008A96BE /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC877F102922CCA6008A96BE /* LocationTests.swift */; };
 		AC877F1329239A5B008A96BE /* TaskManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC877F1229239A5B008A96BE /* TaskManagerTests.swift */; };
@@ -46,6 +48,8 @@
 /* Begin PBXFileReference section */
 		AC7BEF6029255BE20082076F /* TaskListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewControllerTests.swift; sourceTree = "<group>"; };
 		AC7C03982925643E0074016D /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		AC7C039A29276F320074016D /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
+		AC7C039C2927A16B0074016D /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		AC877F0D2922CA20008A96BE /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		AC877F102922CCA6008A96BE /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		AC877F1229239A5B008A96BE /* TaskManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerTests.swift; sourceTree = "<group>"; };
@@ -96,8 +100,17 @@
 			isa = PBXGroup;
 			children = (
 				AC7BEF6029255BE20082076F /* TaskListViewControllerTests.swift */,
+				AC7C039A29276F320074016D /* DataProviderTests.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AC7C039E2927A1740074016D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC7C039C2927A16B0074016D /* TaskCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		AC877F0F2922CC7F008A96BE /* Models */ = {
@@ -149,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				AC877F1729239B93008A96BE /* Managers */,
+				AC7C039E2927A1740074016D /* Views */,
 				ACC57B2A2922BE52008DC8C4 /* ViewControllers */,
 				ACC57B2F2922C0FB008DC8C4 /* Models */,
 				ACC57B292922BE15008DC8C4 /* Storyboards */,
@@ -358,6 +372,7 @@
 				ACC57B2E2922C0F6008DC8C4 /* Task.swift in Sources */,
 				ACC57AFC2922BC80008DC8C4 /* TaskListViewController.swift in Sources */,
 				AC7C03992925643E0074016D /* DataProvider.swift in Sources */,
+				AC7C039D2927A16B0074016D /* TaskCell.swift in Sources */,
 				AC877F0E2922CA20008A96BE /* Location.swift in Sources */,
 				ACC57AF82922BC80008DC8C4 /* AppDelegate.swift in Sources */,
 				ACC57AFA2922BC80008DC8C4 /* SceneDelegate.swift in Sources */,
@@ -370,6 +385,7 @@
 			files = (
 				ACC57B2C2922BED0008DC8C4 /* TasksTests.swift in Sources */,
 				AC877F112922CCA6008A96BE /* LocationTests.swift in Sources */,
+				AC7C039B29276F320074016D /* DataProviderTests.swift in Sources */,
 				AC877F1329239A5B008A96BE /* TaskManagerTests.swift in Sources */,
 				AC7BEF6129255BE20082076F /* TaskListViewControllerTests.swift in Sources */,
 				ACC57B0F2922BC82008DC8C4 /* MyTasksAndTestsTests.swift in Sources */,
