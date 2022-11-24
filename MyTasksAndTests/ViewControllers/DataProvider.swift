@@ -19,7 +19,16 @@ class DataProvider: NSObject {
     
 }
 
+//метод вызываеющий удаление при свайпе по ячейке
 extension DataProvider: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+        
+        guard let section = Section(rawValue: indexPath.section) else { fatalError() }
+        switch section {
+        case .todo: return "Done"
+        case .done: return "Undone"
+        }
+    }
 }
 
 extension DataProvider: UITableViewDataSource {
@@ -53,5 +62,19 @@ extension DataProvider: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         Section.allCases.count
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        guard
+            let section = Section(rawValue: indexPath.section),
+            let taskManager = taskManager else { fatalError() }
+        
+        switch section {
+        case .todo: taskManager.checkTask(at: indexPath.row)
+        case .done: taskManager.unCheckTask(at: indexPath.row)
+        }
+
+        tableView.reloadData()
     }
 }

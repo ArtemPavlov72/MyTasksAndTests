@@ -26,6 +26,7 @@ class DataProviderTests: XCTestCase {
         
         tableView = controller.tableView
         tableView.dataSource = sut
+        tableView.delegate = sut
     }
 
     override func tearDownWithError() throws {
@@ -105,6 +106,44 @@ class DataProviderTests: XCTestCase {
         let cell = mockTableView.cellForRow(at: IndexPath(row: 0, section: 1)) as! MockTaskCell
         XCTAssertEqual(cell.task, task)
     }
+    
+    //тестируем свайп по ячейке, когда появляется кнопка удалить
+    func testDeleteButtonTitleSectionZeroShowsDone() {
+        let buttonTitle = tableView.delegate?.tableView?(tableView, titleForDeleteConfirmationButtonForRowAt: IndexPath(row: 0, section: 0))
+        
+        XCTAssertEqual(buttonTitle, "Done")
+    }
+    
+    func testDeleteButtonTitleSectionOneShowsDone() {
+        let buttonTitle = tableView.delegate?.tableView?(tableView, titleForDeleteConfirmationButtonForRowAt: IndexPath(row: 0, section: 1))
+        
+        XCTAssertEqual(buttonTitle, "Undone")
+    }
+    
+    //пишем тест, проверяющий, что при свайпе и нажатии кнопки удалить, задача перемещается из текущих задач в сделанные
+    func testCheckingTaskChecksInTaskManager() {
+        let task = Task(title: "Foo")
+        sut.taskManager?.add(task: task)
+        
+        //имитируем кнопку поторую нажимаем при свайпе
+        tableView.dataSource?.tableView?(tableView, commit: .delete, forRowAt: IndexPath(row: 0, section: 0))
+        XCTAssertEqual(sut.taskManager?.tasksCount, 0)
+        XCTAssertEqual(sut.taskManager?.doneTasksCount, 1)
+    }
+    
+    //пишем тест, проверяющий, что при свайпе и нажатии кнопки удалить из выполненных задач, задача перемещается в текущих задач
+    func testUncheckingTaskUnchecksInTaskManager() {
+        let task = Task(title: "Foo")
+        sut.taskManager?.add(task: task)
+        sut.taskManager?.checkTask(at: 0)
+        tableView.reloadData()
+        
+        //имитируем кнопку поторую нажимаем при свайпе
+        tableView.dataSource?.tableView?(tableView, commit: .delete, forRowAt: IndexPath(row: 0, section: 1))
+        XCTAssertEqual(sut.taskManager?.tasksCount, 1)
+        XCTAssertEqual(sut.taskManager?.doneTasksCount, 0)
+    }
+    
     
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC3928B2292FF0760071FB5C /* TaskCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3928B1292FF0760071FB5C /* TaskCellTests.swift */; };
 		AC7BEF6129255BE20082076F /* TaskListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7BEF6029255BE20082076F /* TaskListViewControllerTests.swift */; };
 		AC7C03992925643E0074016D /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7C03982925643E0074016D /* DataProvider.swift */; };
 		AC7C039B29276F320074016D /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7C039A29276F320074016D /* DataProviderTests.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC3928B1292FF0760071FB5C /* TaskCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellTests.swift; sourceTree = "<group>"; };
 		AC7BEF6029255BE20082076F /* TaskListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewControllerTests.swift; sourceTree = "<group>"; };
 		AC7C03982925643E0074016D /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		AC7C039A29276F320074016D /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
@@ -96,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC3928B0292FF0530071FB5C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC3928B1292FF0760071FB5C /* TaskCellTests.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		AC7BEF5F29255B970082076F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +185,7 @@
 		ACC57B0D2922BC82008DC8C4 /* MyTasksAndTestsTests */ = {
 			isa = PBXGroup;
 			children = (
+				AC3928B0292FF0530071FB5C /* Views */,
 				AC877F0F2922CC7F008A96BE /* Models */,
 				AC7BEF5F29255B970082076F /* Controllers */,
 				ACC57B0E2922BC82008DC8C4 /* MyTasksAndTestsTests.swift */,
@@ -385,6 +396,7 @@
 			files = (
 				ACC57B2C2922BED0008DC8C4 /* TasksTests.swift in Sources */,
 				AC877F112922CCA6008A96BE /* LocationTests.swift in Sources */,
+				AC3928B2292FF0760071FB5C /* TaskCellTests.swift in Sources */,
 				AC7C039B29276F320074016D /* DataProviderTests.swift in Sources */,
 				AC877F1329239A5B008A96BE /* TaskManagerTests.swift in Sources */,
 				AC7BEF6129255BE20082076F /* TaskListViewControllerTests.swift in Sources */,
