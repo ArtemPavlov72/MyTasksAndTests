@@ -118,6 +118,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		AC5C5555293D12F2009F96B1 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				ACC57B0E2922BC82008DC8C4 /* MyTasksAndTestsTests.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
 		AC7BEF5F29255B970082076F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,10 +209,10 @@
 		ACC57B0D2922BC82008DC8C4 /* MyTasksAndTestsTests */ = {
 			isa = PBXGroup;
 			children = (
+				AC5C5555293D12F2009F96B1 /* Supporting files */,
 				AC3928B0292FF0530071FB5C /* Views */,
 				AC877F0F2922CC7F008A96BE /* Models */,
 				AC7BEF5F29255B970082076F /* Controllers */,
-				ACC57B0E2922BC82008DC8C4 /* MyTasksAndTestsTests.swift */,
 				AC877F1429239A60008A96BE /* Managers */,
 			);
 			path = MyTasksAndTestsTests;
